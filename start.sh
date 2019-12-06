@@ -12,7 +12,7 @@ sleep 10
 
 tmux select-pane -t 1
 
-tmux send-keys "ifconfig wlan0 10.20.0.1/24 up" C-m
+tmux send-keys "ifconfig ens192 192.168.33.1/24 up" C-m
 
 sleep 1
 

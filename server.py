@@ -29,7 +29,7 @@ def favicon():
 @app.route('/', defaults={'path': ''})
 @app.route('/<path:path>')
 def catch_all(path):
-    return redirect("http://10.20.0.1/login?" + urllib.urlencode({'orig_url': request.url}))
+    return redirect("http://192.168.33.1/login?" + urllib.urlencode({'orig_url': request.url}))
 
 if __name__ == "__main__":
 #    app.debug = True
